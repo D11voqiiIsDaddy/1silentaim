@@ -1,7 +1,7 @@
 local player = game.Players.LocalPlayer
 
-if player:IsInGroup(16298833) then
-local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/topillesrevenge/Streamable-Silent/main/Side"))()
+if player:IsInGroup(4388652) then
+local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/D11voqiiIsDaddy/silent/main/aim"))()
 Aiming.TeamCheck(false)
 
 local Workspace = game:GetService("Workspace")
@@ -28,9 +28,8 @@ function Aiming.Check()
 
     local Character = Aiming.Character(Aiming.Selected)
     local KOd = Character:WaitForChild("BodyEffects")["K.O"].Value
-    local Grabbed = Character:FindFirstChild("GRABBING_CONSTRAINT") ~= nil
-
-    if (KOd or Grabbed) then
+    local Grabbed = Character:F
+    if (Kod or Grabbed) then
         return false
     end
 
@@ -89,7 +88,8 @@ RunService:BindToRenderStep("AimLock", 0, function()
     loadstring(game:HttpGet("https://paste.ee/r/DstYB"))()
         
     else
-setclipboard("https://www.roblox.com/groups/16298833/synx-clothes#!/about")
+setclipboard("https://www.roblox.com/groups/4388652/hashtags-squad#!/about")
 wait(1)
 game.Players.LocalPlayer:Kick("Join the group to use the script, the link was copied to your clipboard!")
         end
+        print("hi")
